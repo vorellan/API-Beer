@@ -30,7 +30,7 @@ sudo docker-compose up --build
 
 5.  Con un gestor de bd (por ejemplo DBeaver), conectarse a base de datos, con las credenciales del .env o las de docker-compose (servicio mysql), que son las mismas y ejecutar script:
 
-![DB_IMAGE](db.png)
+![DB_IMAGE](image/db.png)
 
 ```
 Si no está creada la bd crearla:
@@ -49,9 +49,6 @@ CREATE DATABASE beer;
 VALUES('test', 'test', 'test');
 
 ```
-
-
-
 
 
 6.  Ejecutar en consola comandos para utilizar endpoints:
