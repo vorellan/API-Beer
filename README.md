@@ -2,6 +2,8 @@
 
 ### Instalación 🔧
 
+Trabajo realizado con framework Gin-Gonic, golang, REST, Tambien manejo de servicios a través de Dockerfile y docker-compose.
+
 1.  Clonar repositorio
 
 2.  Ejecutar comando o crear .env
