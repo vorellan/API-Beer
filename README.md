@@ -18,6 +18,8 @@ sudo docker-compose up --build
 
 ```
 
+![SERVICES_IMAGE](./images/services.png)
+
 4.  Tener en cuenta que las rutas disponibles son las siguientes
 
 ```
