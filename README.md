@@ -25,10 +25,10 @@ sudo docker-compose up --build
 4.  Tener en cuenta que las rutas disponibles son las siguientes
 
 ```
-"/beers/:beer_id" : para obtener cerveza en especifico
-"/beers"  : para obtener todas las cervezas
-"/beers" : para insertar una cerveza
-"/beerForm" : calcular costo cerveza
+"/beers/:beer_id" : para obtener cerveza en especifico (GET)
+"/beers"  : para obtener todas las cervezas (GET)
+"/beers" : para insertar una cerveza (POST)
+"/beerForm" : calcular costo cerveza (POST)
 
 ```
 
