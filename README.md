@@ -35,7 +35,7 @@ sudo docker-compose up --build
 ```
 Si no está creada la bd crearla:
 
-CREATE DATABASE beer;
+CREATE DATABASE beers;
 
   CREATE TABLE `beers.beer` (
   `id` INT NOT NULL AUTO_INCREMENT,
