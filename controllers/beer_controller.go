@@ -7,6 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strconv"
+
 )
 
 func getBeerId(brIdParam string) (int64, error_utils.MessageErr) {
@@ -53,6 +54,26 @@ func CreateBeer(c *gin.Context) {
 		return
 	}
 	c.JSON(http.StatusCreated, br)
+}
+
+func CalculateBeer(c *gin.Context) {
+	var f interface{}
+
+	if err := c.ShouldBindJSON(&f); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	quantity := f.(map[string]interface{})["quantity"]
+	price := f.(map[string]interface{})["price"]
+
+	var quantityInt int = int(quantity.(float64))
+	var priceInt int = int(price.(float64))
+	total := quantityInt * priceInt
+	
+	// c.JSON(http.StatusOK, gin.H{"quantity": quantity})
+	// c.JSON(http.StatusOK, gin.H{"price": price})
+	c.JSON(http.StatusOK, gin.H{"total": total})
 }
 
 
