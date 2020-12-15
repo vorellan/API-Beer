@@ -32,7 +32,8 @@ type server struct {
 func (b *server) Initialize(Dbdriver, DbUser, DbPassword, DbPort, DbHost, DbName string) *sql.DB  {
 	var err error
 	//connectionString := fmt.Sprintf("%s:%s@(%s:%s)/%s", user, password, "127.0.0.1", "33060", dbname)
-	DBURL := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?parseTime=true", DbUser, DbPassword, DbHost, DbPort, DbName)
+
+	DBURL := fmt.Sprintf("%s:%s@tcp(full_db_mysql)/%s?parseTime=true", DbUser, DbPassword, DbName)
 
 	b.db, err = sql.Open(Dbdriver, DBURL)
 	if err != nil {
