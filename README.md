@@ -30,7 +30,7 @@ sudo docker-compose up --build
 
 5.  Con un gestor de bd (por ejemplo DBeaver), conectarse a base de datos, con las credenciales del .env o las de docker-compose (servicio mysql), que son las mismas y ejecutar script:
 
-![DB_IMAGE](images/db.png)
+![DB_IMAGE](./images/db.png)
 
 ```
 Si no está creada la bd crearla:
