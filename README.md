@@ -7,7 +7,7 @@
 2.  Ejecutar comando o crear .env
 
 ```
-cp .env_copy
+cp .env_copy .env
 
 ```
 
