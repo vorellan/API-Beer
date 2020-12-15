@@ -61,6 +61,10 @@ curl -H "Content-Type: application/json" -X POST -d '{"quantity":6,"price":3}' 1
 
 ```
 
+Algunos ejemplos:
+
+![CURLS_IMAGE](./images/curls.png)
+
 7.  Parar servicios con Ctrl+C
 
 8.  Ejecutar coverage, en la raiz:
@@ -71,5 +75,7 @@ curl -H "Content-Type: application/json" -X POST -d '{"quantity":6,"price":3}' 1
 go test -v ./... -cover 
 
 ```
+
+![TDD_IMAGE](./images/tdd.png)
 
 Have a great time!
